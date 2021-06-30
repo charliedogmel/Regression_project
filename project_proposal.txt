@@ -1,0 +1,53 @@
+Project Proposal - Energy consumption or emissions per country
+
+Question/need:
+
+    What is the framing question of your analysis, or the purpose of the model/system you plan to build?
+
+    Can a country's energy consumption or greenhouse gas emissions be determined by its makeup: size, GDP,
+    poverty level, renewables production, population, etc? The purpose is to look for a meaningful relationship.
+
+    Who benefits from exploring this question or building this model/system?
+
+    It's a complicated social-economic-environmental issue that is interesting to explore. I'm not sure
+    exactly who benefits from it.
+
+Data Description:
+
+    What dataset(s) do you plan to use, and how will you obtain the data?
+
+    I will use the CIA World Factbook https://www.cia.gov/the-world-factbook/countries/ for stats on
+    different countries from years 2000-2018. The active website only shows 2021 data, and previous years are
+    obtained by downloading a zip of that year's website: https://www.cia.gov/the-world-factbook/about/archives.
+    So the websites I will scrape will be local to my machine. I am only going back to 2000 because that's the
+    earliest archive that is available.
+
+    I will use the US EIA website, https://stats.oecd.org/viewhtml.aspx?datasetcode=EXP_MORSC&lang=en, to download
+    csv tables on countries' energy production and consumption from years 2000-2018. There are also other data
+    available like "Mortality, morbidity and welfare cost from exposure to environment-related risks" which could
+    be valuable and is also available via a web-scraped table or csv download.
+
+Customise
+
+    What is an individual sample/unit of analysis in this project? What characteristics/features do you expect
+    to work with? If modeling, what will you predict as your target?
+
+    Features include country, year, GHG emissions, CO2 emissions, size in square feet, population, poverty level,
+    renewables production, GDP, and more. 
+
+Tools:
+
+    How do you intend to meet the tools requirement of the project?
+
+    Selenium to drive through each country's year's factbook and Selenium for data acquisition. Maybe SQL for the
+    csv tables. 
+
+    Are you planning in advance to need or use additional tools beyond those required?
+
+    No.
+
+MVP Goal:
+
+    What would a minimum viable product (MVP) look like for this project?
+
+    An MVP could be one country over all the years or all the data read in and cleaned up in a database.
